@@ -19,13 +19,15 @@ public class Fruit : MonoBehaviour
         foreach (Transform child in GetComponentInChildren<Transform>())
         {
             if(child == transform) continue;
+
             Rigidbody2D rb = child.gameObject.AddComponent<Rigidbody2D>();
             rb.velocity = GetComponent<Rigidbody2D>().velocity + Random.insideUnitCircle;
             rb.angularVelocity = Random.Range(-10f, 10f);
         }
 
-         ParticleSystem particles = Instantiate(splashParticles, transform.position, Quaternion.identity);
+        ParticleSystem particles = Instantiate(splashParticles, transform.position, Quaternion.identity);
         particles.startColor = splashColor;
+
         transform.DetachChildren();
         Destroy(gameObject);
     }
