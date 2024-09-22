@@ -24,6 +24,6 @@ public class Sword : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Audio.Play(splashSound);
-        Destroy(other.gameObject);
+        other.gameObject.GetComponent<Fruit>().Slice();
     }
 }
