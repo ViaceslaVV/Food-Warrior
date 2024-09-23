@@ -169,6 +169,42 @@ MonoBehaviour:
   prefabs:
   - {fileID: 3520160073198043943, guid: 17c7396305d5f40d48c76fdd8123a24f, type: 3}
   - {fileID: 5736551554712548416, guid: 40232be74e5674d148c1aaa782da25bb, type: 3}
+  bomb: {fileID: 2159524778100570597, guid: 984b3386d59f0904bbb16786ef7af092, type: 3}
+  waves:
+  - fruits:
+    - x: 0
+      velocity: {x: 6, y: 6}
+      isBomb: 1
+    isSequency: 0
+  - fruits:
+    - x: 0
+      velocity: {x: 0, y: 0}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 0}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 0}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 0}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 0}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 0}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 0}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 0}
+      isBomb: 0
+    isSequency: 1
+  delay: 2
+  currentWave: 0
+  currentFruits: 0
 --- !u!1 &375433278
 GameObject:
   m_ObjectHideFlags: 0
