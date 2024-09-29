@@ -7,9 +7,14 @@ public class Fruit : MonoBehaviour
     public Color splashColor;
     public bool isBomb;
 
-    void Start()
+    
+    void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, 12f);
+        if (transform.position.y < -7 && !isBomb)
+        {
+            gameManager.instance.Damage(1);
+            Destroy(gameObject);
+        }
     }
 
     public void Slice()
@@ -18,7 +23,11 @@ public class Fruit : MonoBehaviour
 
         if(isBomb )
         {
-            print("1");
+            gameManager.instance.Damage(3);
+        }
+        else
+        {
+            gameManager.instance.AddScore(1);
         }
 
         foreach (Transform child in GetComponentsInChildren<Transform>())

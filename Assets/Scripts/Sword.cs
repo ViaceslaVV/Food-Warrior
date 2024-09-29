@@ -1,9 +1,14 @@
 using UnityEngine;
+using TMPro;
 
 public class Sword : MonoBehaviour
 {
     public AudioClip splashSound;
     Camera cam;
+
+    
+
+    
 
     void Start()
     {
@@ -22,5 +27,9 @@ public class Sword : MonoBehaviour
     {
         Audio.Play(splashSound);
         other.gameObject.GetComponent<Fruit>().Slice();
+
+        
     }
+    
+
 }
