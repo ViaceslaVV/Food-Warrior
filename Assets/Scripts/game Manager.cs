@@ -48,7 +48,7 @@ public class gameManager : MonoBehaviour
     }
     public void LoadScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         gameOverScreen.SetActive(false);
     }
 

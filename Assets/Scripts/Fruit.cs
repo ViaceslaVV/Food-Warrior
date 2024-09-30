@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fruit : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class Fruit : MonoBehaviour
     public ParticleSystem splashParticles;
     public Color splashColor;
     public bool isBomb;
+    public string nextScene;
 
     
     void Update()
@@ -44,5 +46,10 @@ public class Fruit : MonoBehaviour
 
         transform.DetachChildren();
         Destroy(gameObject);
+
+        if(nextScene != "")
+        {
+            SceneManager.LoadScene(nextScene);
+        }
     }
 }

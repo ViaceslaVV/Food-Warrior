@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a8eb3a3feb469be49ad3b2e81d0f568c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   splashParticles: {fileID: 5065897898058063847, guid: 97f8a5dbffc0b4f28ad510663e9ed32e, type: 3}
   splashColor: {r: 0, g: 0, b: 0, a: 0}
   isBomb: 1
+  nextScene: 
 --- !u!58 &893597708198195796
 CircleCollider2D:
   m_ObjectHideFlags: 0

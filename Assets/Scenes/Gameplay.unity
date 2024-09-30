@@ -307,42 +307,75 @@ MonoBehaviour:
   waves:
   - fruits:
     - x: 0
+      velocity: {x: 6, y: 10}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 7, y: 10}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 1, y: 10}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 8, y: 10}
+      isBomb: 1
+    - x: 0
       velocity: {x: 4, y: 10}
       isBomb: 0
     isSequency: 1
   - fruits:
     - x: 0
-      velocity: {x: -5, y: 11}
+      velocity: {x: 0, y: 10}
       isBomb: 0
     - x: 0
-      velocity: {x: 6, y: 10}
-      isBomb: 0
-    isSequency: 1
-  - fruits:
-    - x: 0
-      velocity: {x: 1, y: 11}
-      isBomb: 1
-    isSequency: 1
-  - fruits:
-    - x: 0
-      velocity: {x: -4, y: 9}
-      isBomb: 0
-    - x: 0
-      velocity: {x: 6, y: 10}
-      isBomb: 1
-    - x: 0
-      velocity: {x: 8, y: 7}
+      velocity: {x: 4, y: 12}
       isBomb: 0
     isSequency: 1
   - fruits:
     - x: 0
-      velocity: {x: 7, y: 10}
+      velocity: {x: 1, y: 10}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 2, y: 10}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 10}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 10}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 0, y: 10}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 4, y: 10}
+      isBomb: 0
+    - x: 0
+      velocity: {x: 4, y: 10}
+      isBomb: 0
+    isSequency: 1
+  - fruits:
+    - x: 0
+      velocity: {x: 3, y: 10}
       isBomb: 1
     - x: 0
-      velocity: {x: -6, y: 10}
+      velocity: {x: -3, y: 10}
+      isBomb: 1
+    isSequency: 1
+  - fruits:
+    - x: 0
+      velocity: {x: 3, y: 15}
       isBomb: 1
     - x: 0
-      velocity: {x: -5, y: 10}
+      velocity: {x: 2, y: 17}
+      isBomb: 0
+    - x: 0
+      velocity: {x: -3, y: 15}
+      isBomb: 1
+    - x: 0
+      velocity: {x: 0, y: 15}
+      isBomb: 0
+    - x: 0
+      velocity: {x: -3, y: 15}
       isBomb: 0
     isSequency: 1
   delay: 2
@@ -5470,7 +5503,6 @@ GameObject:
   m_Component:
   - component: {fileID: 694433339}
   - component: {fileID: 694433342}
-  - component: {fileID: 694433341}
   - component: {fileID: 694433340}
   m_Layer: 5
   m_Name: Button (Legacy)
@@ -5488,7 +5520,7 @@ RectTransform:
   m_GameObject: {fileID: 694433338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -16}
-  m_LocalScale: {x: 0.75694776, y: 0.9090473, z: 0.95470536}
+  m_LocalScale: {x: 1.4528098, y: 1.7447344, z: 1.832366}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1992838589}
@@ -5496,7 +5528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -78.8}
+  m_AnchoredPosition: {x: 13.6, y: -63}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694433340
@@ -5539,7 +5571,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 694433341}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -5555,36 +5587,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &694433341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694433338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &694433342
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5788,6 +5790,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splashSound: {fileID: 8300000, guid: 734d20780e8c6ac4d90d8ec68355838a, type: 3}
+  sliceTime: 1
+  maxslice: 3
+  combo: 0
+  comboSounds:
+  - {fileID: 8300000, guid: 1f6bcd7ed0cb81e498d757d754aa0321, type: 3}
+  - {fileID: 8300000, guid: 96d502199d68aae4086e7e08605ad8cd, type: 3}
+  - {fileID: 8300000, guid: 6cdd4c3c255e7a342a2a9097e0e6c281, type: 3}
+  - {fileID: 8300000, guid: 9bc8f7c58f096fa4da1a25fba8224c72, type: 3}
+  - {fileID: 8300000, guid: d8b5b1999a35d0c4fa889199e1bfcd7d, type: 3}
+  - {fileID: 8300000, guid: 2339ef362a1bc8a4c93d13e6ca47d34d, type: 3}
+  - {fileID: 8300000, guid: b6307b35913245144a65d1879073ca58, type: 3}
+  - {fileID: 8300000, guid: f1dbcd01d2d72bd4d9b3b79d315407cd, type: 3}
+  - {fileID: 8300000, guid: bab27b8cb4f13dd4d859b5f53f5ead23, type: 3}
 --- !u!58 &737233063
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6045,7 +6060,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &1107585217
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6063,7 +6078,7 @@ RectTransform:
   m_GameObject: {fileID: 1107585215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3210951, y: 1.1000527, z: 1.0474435}
+  m_LocalScale: {x: 1.9130778, y: 1.564715, z: 1.0474435}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 76479389}
